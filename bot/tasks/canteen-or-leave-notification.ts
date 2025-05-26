@@ -21,6 +21,7 @@ export const canteenOrLeaveNotification = async (bot: CustomBot) => {
         gte: now,
         lte: fiveMinutesLater,
       },
+      teacher: { notify: true },
       OR: [{ canteen: true }, { lead: true }],
     },
     select: {
@@ -42,7 +43,7 @@ export const canteenOrLeaveNotification = async (bot: CustomBot) => {
     try {
       const chat = await bot.api.getChatMember(
         userId.toString(),
-        Number(userId.toString),
+        Number(userId),
       );
       let lang = (chat.user.language_code as keyof typeof languages) || 'en';
       lang = lang in languages ? lang : 'en';

@@ -10,8 +10,8 @@ export const setFollowingTeacherInlineKeyboard = ({
 }: GenerateMoreInlineKeyboardParams) => {
   const inlineKeyboardItems = [] as string[][];
 
-  for (const { id, surname, name, patronymic, disabled } of teachers) {
-    if (!disabled) {
+  for (const { id, surname, name, patronymic, hidden } of teachers) {
+    if (!hidden) {
       inlineKeyboardItems.push([`${surname} ${name} ${patronymic}`, id]);
     }
   }

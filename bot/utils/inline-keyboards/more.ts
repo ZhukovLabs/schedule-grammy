@@ -5,11 +5,13 @@ import { LanguageCode, languages } from '@bot/constants/languages';
 type GenerateMoreInlineKeyboardParams = {
   lang: LanguageCode;
   isTeacher: boolean;
+  notify: boolean;
 };
 
 export const moreInlineKeyboard = ({
   lang,
   isTeacher,
+  notify,
 }: GenerateMoreInlineKeyboardParams) => {
   const labels = languages[lang].moreInlineKeyboard;
 
@@ -21,7 +23,13 @@ export const moreInlineKeyboard = ({
   ];
 
   if (isTeacher) {
-    inlineKeyboardItems.unshift([labels.schedule, 'configure-schedule']);
+    inlineKeyboardItems.unshift(
+      [labels.schedule, 'configure-schedule'],
+      [
+        notify ? labels.turnOffNotification : labels.turnOnNotification,
+        'toggle-notify',
+      ],
+    );
   } else {
     inlineKeyboardItems.unshift([labels.imTeacher, 'im-teacher']);
   }

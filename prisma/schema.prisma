@@ -35,7 +35,8 @@ model Teacher {
   userId BigInt @unique @map("user_id") @db.BigInt
   user   User   @relation(fields: [userId], references: [id])
 
-  disabled Boolean @default(false)
+  hidden Boolean @default(false)
+  notify Boolean @default(true)
 
   createdAt DateTime @default(now()) @map("created_at") @db.Timestamp()
   updatedAt DateTime @updatedAt @map("updated_at") @db.Timestamp()

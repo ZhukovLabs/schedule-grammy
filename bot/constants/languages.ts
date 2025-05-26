@@ -18,34 +18,36 @@ export const en = {
   ],
   user: 'User',
   greetings: (name: string) =>
-    `Hello, *${escapeMarkdownV2(name)}* 🤗\nThis bot is designed to help you with the schedule at school SSH\\-27`,
-  menuSet: 'Buttons have been set',
+    `Hello, *${escapeMarkdownV2(name)}* 🤗\nThis bot is designed to help you with the schedule at school SSH\\-27 🏫`,
+  menuSet: 'Buttons have been set ✅',
   moreInlineKeyboard: {
-    imTeacher: "I'm a teacher",
-    adminSchedule: 'Duty administrator',
-    callSchedule: 'Call schedule',
-    chooseTeacher: 'Choose a teacher',
-    contacts: 'Contacts',
-    schedule: 'Configure schedule',
+    imTeacher: "I'm a teacher 🎓",
+    adminSchedule: 'Duty administrator 👮‍♂️',
+    callSchedule: 'Call schedule 🗓',
+    chooseTeacher: 'Choose a teacher 👨‍🏫',
+    contacts: 'Contacts 📇',
+    schedule: 'Configure schedule ⚙️',
+    turnOffNotification: 'Turn off notifications 🔕',
+    turnOnNotification: 'Turn on notifications 🔔',
   },
   answerToImTeacher: (username: string) =>
     `To confirm that you are a teacher, contact ${username}`,
-  contacts: (username: string) => `Developer: ${username}`,
+  contacts: (username: string) => `Developer: ${username} 💻`,
   isTeacherNow: (surname: string | null, name: string | null) =>
-    `${surname} ${name} is now a teacher`,
+    `${surname} ${name} is now a teacher 👨‍🏫`,
   isNotTeacherNow: (surname: string | null, name: string | null) =>
-    `${surname} ${name} is no longer a teacher`,
+    `${surname} ${name} is no longer a teacher ❌`,
   isNotTeacher: (userId: string) => `${userId} is not a teacher`,
-  notFound: 'User is not found',
+  notFound: 'User is not found 🔍',
   gap: '🙌 *Gap*',
   youFollow: (surname: string, name: string, patronymic: string) =>
-    `You follow ${surname} ${name} ${patronymic}`,
-  youUnfollow: 'You do not follow anyone teacher',
+    `You follow ${surname} ${name} ${patronymic} 👀`,
+  youUnfollow: 'You do not follow anyone teacher 🚫',
   noAccount: 'Your account is not found. Write a command: /start',
   youFollowNow: (surname: string, name: string, patronymic: string) =>
     escapeMarkdownV2(`You have followed ${surname} ${name} ${patronymic} now`),
   youAreTeacher: (surname: string, name: string, patronymic: string) =>
-    `You are a teacher - ${surname} ${name} ${patronymic}`,
+    `You are a teacher - ${surname} ${name} ${patronymic} 🎓`,
   lesson: ({
     lesson,
     classroom,
@@ -81,10 +83,12 @@ export const en = {
   error: 'Oops, something went wrong 😬',
   newLink: 'Create a new link',
   linkUpdated: 'The link has been updated',
+  notificationIsTurnedOff: 'Notifications are turned off 🔕',
+  notificationIsTurnedOn: 'Notifications are turned on 🔔',
   back: 'Back',
-  noSpam: 'Please do not spam',
+  noSpam: "Please don't spam 🚫🙅‍♂️",
   unknownCommand:
-    "Sorry, I don't understand that command 🥺\nIf your buttons have disappeared, please send: /b\n👇Also, if necessary, to the left of the input field you have a menu",
+    "Sorry, I don't understand that command 🥺\nIf your buttons have disappeared, please send: /b\n\n👇 Also, if necessary, to the left of the input field you have a menu",
 };
 
 export const ru: typeof en = {
@@ -97,38 +101,40 @@ export const ru: typeof en = {
   },
   user: 'Пользователь',
   greetings: (name: string) =>
-    `Привет, *${escapeMarkdownV2(name)}* 🤗\nДанный бот предназначен помочь вам с расписанием в школе СШ\\-27`,
+    `Привет, *${escapeMarkdownV2(name)}* 🤗\nДанный бот предназначен помочь вам с расписанием в школе СШ\\-27 🏫`,
   keyboardMenuItems: [
     ['ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'],
     ['Сегодня', 'Сейчас', 'Завтра', 'Ещё'],
   ],
-  menuSet: 'Кнопки установлены',
+  menuSet: 'Кнопки установлены ✅',
   moreInlineKeyboard: {
-    imTeacher: 'Я учитель',
-    adminSchedule: 'Дежурный администратор',
-    callSchedule: 'Расписание звонков',
-    chooseTeacher: 'Выбрать учителя',
-    contacts: 'Контакты',
-    schedule: 'Управление расписанием',
+    imTeacher: 'Я учитель 🎓',
+    adminSchedule: 'Дежурный администратор 👮‍♂️',
+    callSchedule: 'Расписание звонков 🗓',
+    chooseTeacher: 'Выбрать учителя 👨‍🏫',
+    contacts: 'Контакты 📇',
+    schedule: 'Управление расписанием ⚙️',
+    turnOffNotification: 'Отключить уведомления 🔕',
+    turnOnNotification: 'Включить уведомления 🔔',
   },
   answerToImTeacher: (username: string) =>
     `Для подтверждения того, что вы учитель свяжитесь с ${username}`,
-  contacts: (username: string) => `Разработчик: ${username}`,
+  contacts: (username: string) => `Разработчик: ${username} 💻`,
   isTeacherNow: (surname: string | null, name: string | null) =>
-    `${surname} ${name} теперь учитель`,
+    `${surname} ${name} теперь учитель 👨‍🏫`,
   isNotTeacherNow: (surname: string | null, name: string | null) =>
-    `${surname} ${name} теперь не учитель`,
+    `${surname} ${name} теперь не учитель ❌`,
   isNotTeacher: (userId: string) => `${userId} не является учитель`,
-  notFound: 'Пользователь не найден',
+  notFound: 'Пользователь не найден 🔍',
   youFollowNow: (surname: string, name: string, patronymic: string) =>
     `Вы теперь следите за ${surname} ${name} ${patronymic}`,
   gap: '🙌 *Форточка*',
   youFollow: (surname: string, name: string, patronymic: string) =>
-    `Вы следите за ${surname} ${name} ${patronymic}`,
-  youUnfollow: 'Вы не следите ни за одним учителем',
+    `Вы следите за ${surname} ${name} ${patronymic} 👀`,
+  youUnfollow: 'Вы не следите ни за одним учителем 🚫',
   noAccount: 'Ваш аккаунт не найден. Напишите команду: /start',
   youAreTeacher: (surname: string, name: string, patronymic: string) =>
-    `Вы учитель - ${surname} ${name} ${patronymic}`,
+    `Вы учитель - ${surname} ${name} ${patronymic} 🎓`,
   lesson: ({
     lesson,
     classroom,
@@ -164,10 +170,12 @@ export const ru: typeof en = {
   error: 'Упс, что-то пошло не так 😬',
   newLink: 'Создать новую ссылку',
   linkUpdated: 'Ссылка обновлена. Теперь вы можете войти',
+  notificationIsTurnedOff: 'Уведомления выключены 🔕',
+  notificationIsTurnedOn: 'Уведомления включены 🔔',
   back: 'Назад',
   noSpam: 'Пожалуйста, не спамьте',
   unknownCommand:
-    'Извините, я не понимаю эту команду 🥺\nЕсли у вас пропали кнопки, то отправьте: /b\n👇Также, если необходимо, слева от поля ввода у вас есть меню',
+    'Извините, я не понимаю эту команду 🥺\nЕсли у вас пропали кнопки, то отправьте: /b\n\n👇 Также, если необходимо, слева от поля ввода у вас есть меню',
 } as const;
 
 export const languages = {

@@ -52,6 +52,7 @@ export async function loadCallbackQueries(bot: CustomBot) {
     await import('@bot/callback-queries/more/im-teacher'),
     await import('@bot/callback-queries/more/choose-teacher'),
     await import('@bot/callback-queries/configure-schedule'),
+    await import('@bot/callback-queries/more/toggle-notify'),
   ];
 
   callbackQueries.forEach((command) => {
