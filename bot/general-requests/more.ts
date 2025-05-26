@@ -11,7 +11,9 @@ export const more = async (ctx: CustomContext) => {
   const user = await prisma.user.findUnique({
     where: { id: id },
     select: {
-      teacher: { select: { surname: true, name: true, patronymic: true } },
+      teacher: {
+        select: { surname: true, name: true, patronymic: true, notify: true },
+      },
       followingTeacher: {
         select: { surname: true, name: true, patronymic: true },
       },
@@ -23,6 +25,7 @@ export const more = async (ctx: CustomContext) => {
   const inlineKeyboard = moreInlineKeyboard({
     lang,
     isTeacher: !!user!.teacher,
+    notify: user.teacher!.notify,
   });
 
   let answer = '';

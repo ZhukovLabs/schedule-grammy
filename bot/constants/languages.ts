@@ -27,6 +27,8 @@ export const en = {
     chooseTeacher: 'Choose a teacher 👨‍🏫',
     contacts: 'Contacts 📇',
     schedule: 'Configure schedule ⚙️',
+    turnOffNotification: 'Turn off notifications 🔕',
+    turnOnNotification: 'Turn on notifications 🔔',
   },
   answerToImTeacher: (username: string) =>
     `To confirm that you are a teacher, contact ${username}`,
@@ -81,6 +83,8 @@ export const en = {
   error: 'Oops, something went wrong 😬',
   newLink: 'Create a new link',
   linkUpdated: 'The link has been updated',
+  notificationIsTurnedOff: 'Notifications are turned off 🔕',
+  notificationIsTurnedOn: 'Notifications are turned on 🔔',
   back: 'Back',
   noSpam: "Please don't spam 🚫🙅‍♂️",
   unknownCommand:
@@ -110,6 +114,8 @@ export const ru: typeof en = {
     chooseTeacher: 'Выбрать учителя 👨‍🏫',
     contacts: 'Контакты 📇',
     schedule: 'Управление расписанием ⚙️',
+    turnOffNotification: 'Отключить уведомления 🔕',
+    turnOnNotification: 'Включить уведомления 🔔',
   },
   answerToImTeacher: (username: string) =>
     `Для подтверждения того, что вы учитель свяжитесь с ${username}`,
@@ -164,6 +170,8 @@ export const ru: typeof en = {
   error: 'Упс, что-то пошло не так 😬',
   newLink: 'Создать новую ссылку',
   linkUpdated: 'Ссылка обновлена. Теперь вы можете войти',
+  notificationIsTurnedOff: 'Уведомления выключены 🔕',
+  notificationIsTurnedOn: 'Уведомления включены 🔔',
   back: 'Назад',
   noSpam: 'Пожалуйста, не спамьте',
   unknownCommand:
