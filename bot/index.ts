@@ -1,5 +1,5 @@
 import { autoRetry } from '@grammyjs/auto-retry';
-import { Bot, GrammyError, session } from 'grammy';
+import { Bot, session, GrammyError } from 'grammy';
 import { run } from '@grammyjs/runner';
 
 import { envConfig } from '@/env-config';
