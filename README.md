@@ -1,4 +1,4 @@
-# Schedule — web app + Telegram bot
+# Schedule: web app + Telegram bot
 
 Schedule service that combines a **Next.js web app** with a **Telegram bot** (grammY): teachers check their schedules from the browser or directly in Telegram.
 
@@ -19,7 +19,7 @@ Schedule service that combines a **Next.js web app** with a **Telegram bot** (gr
 
 ## Data
 
-- Prisma ORM — models: `User`, `Teacher`, `Schedule`
+- Prisma ORM, models: `User`, `Teacher`, `Schedule`
 
 ## Engineering
 
